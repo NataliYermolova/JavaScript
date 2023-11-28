@@ -1,0 +1,13 @@
+.product-card{
+    width: fit-content;
+    margin-bottom: 20px;
+    border: 1px solid #c0c0c0;
+}
+.product-image{
+    width: 200px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.product-title{
+    text-align: center;
+}
