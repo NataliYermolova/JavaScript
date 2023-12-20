@@ -51,13 +51,14 @@ document.write(`----------------------------------------------------------------
 
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 
-
+document.write('<ul>')
 for (i = 0; i<listOfItems.length; i++){
     document.write(`
-        <ul>
         <li>${listOfItems[i]}</li>
-        </ul>`)
+        `)
 }
+document.write('</ul>')
+
 document.write(`-------------------------------------------------------------------------------`)
 
 //     Використовуючи данні з масиву, за допомоги document.write та циклу
@@ -142,9 +143,6 @@ for(i =0; i<products.length; i++){
 //     {name: 'max', age: 31, status: true}
 // ];
 
-// за допомоги циклу вивести:
-//     - користувачів зі статусом true
-
 let users = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
@@ -159,9 +157,11 @@ let users = [
     {name: 'max', age: 31, status: true}
     ];
 
+// за допомоги циклу вивести:
+//     - користувачів зі статусом true
 
 for (i = 0; i<users.length; i++){
-        if (users[i].status === true){
+        if (users[i].status){
             console.log(users[i])
         }
 }
@@ -170,7 +170,7 @@ console.log('-------------------------------------------')
 // - користувачів зі статусом false
 
 for (i = 0; i<users.length; i++){
-    if (users[i].status === false){
+    if (!users[i].status){
         console.log(users[i])
     }
 }
